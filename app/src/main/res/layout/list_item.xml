@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_color_change"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/category_numbers">
+
+
+    <ImageView
+        android:id="@+id/minow_image"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:background="@color/tan_background"/>
+
+
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_weight="10"
+        android:layout_height="88dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/miwok_words"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            tools:text="lutti"
+            style="@style/MiwokStyle"/>
+
+        <TextView
+            android:id="@+id/english_words"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            style="@style/MiwokStyle"
+            android:textStyle="normal"
+            tools:text="one" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/baseline_play_arrow_white_24"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="16dp"/>
+
+</LinearLayout>
